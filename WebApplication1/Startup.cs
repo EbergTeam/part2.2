@@ -19,6 +19,7 @@ namespace WebApplication1
 
             app.Run(async (context) =>
             {
+                context.Response.ContentType = "text/plain;charset=utf-8";
                 await context.Response.WriteAsync("It work!!!");
             });
         }
