@@ -14,9 +14,9 @@ namespace WebApplication1
     {
         public void Configure(IApplicationBuilder app)
         {
-            // âûçûâàåì ìåòîä ðàñøèðåíèÿ è ïåðåäàåì îáðàçåö òîêåíà äëÿ ñðàâíåíèÿ
+            // Ã¢Ã»Ã§Ã»Ã¢Ã Ã¥Ã¬ Ã¬Ã¥Ã²Ã®Ã¤ Ã°Ã Ã±Ã¸Ã¨Ã°Ã¥Ã­Ã¨Ã¿ Ã¨ Ã¯Ã¥Ã°Ã¥Ã¤Ã Ã¥Ã¬ Ã®Ã¡Ã°Ã Ã§Ã¥Ã¶ Ã²Ã®ÃªÃ¥Ã­Ã  Ã¤Ã«Ã¿ Ã±Ã°Ã Ã¢Ã­Ã¥Ã­Ã¨Ã¿
             app.UseToken("1234");
-
+            // Ð¢ÐµÑÑ‚
             app.Run(async (context) =>
             {
                 await context.Response.WriteAsync("It work!!!");
